@@ -2,6 +2,8 @@
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement Instance;
+
     public float speed = 10f;
     public float jumpForce = 10f;
     private float laneDistance = 3f;
@@ -25,6 +27,11 @@ public class PlayerMovement : MonoBehaviour
     private float slidingHeight = 1f; // Kayma sırasında boy
     private Vector3 normalScale = new Vector3(1f, 1f, 1f); // Normal scale
     private Vector3 slidingScale = new Vector3(1f, 0.5f, 1f); // Kayma sırasında scale
+
+    void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {
@@ -137,5 +144,10 @@ public class PlayerMovement : MonoBehaviour
         transform.position = new Vector3(transform.position.x, normalHeight, transform.position.z); // Y tekrar eski haline gelir
 
         isSliding = false;
+    }
+
+    public void Die()
+    {
+        Destroy(gameObject);
     }
 }
