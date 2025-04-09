@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    public static PlayerMovement Instance;
+    public static Player Instance;
 
     public float speed = 10f;
     public float jumpForce = 10f;

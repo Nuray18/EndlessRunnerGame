@@ -36,7 +36,7 @@ public class PlatformSpawner : MonoBehaviour
 
     void Update()
     {
-        if (PlayerMovement.Instance == null)
+        if (Player.Instance == null)
             return;
 
         if (playerTransform.position.z + (platformLength * 5) > spawnZ)

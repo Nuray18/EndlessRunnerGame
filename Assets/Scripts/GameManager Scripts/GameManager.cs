@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public GameObject gameOverPanel;
+    public TMP_Text instructions;
 
     // bunlar gameOver panelinde gozukenlerdir.
     public TMP_Text totalScoreText;
@@ -44,6 +45,10 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         gameOverPanel.SetActive(true);
+        if(instructions != null)
+        {
+            instructions.enabled = false;
+        }
 
         pauseButton.gameObject.SetActive(false); // burda interactivini engelliyoruz
         mainDistanceText.enabled = false; // SetActive() funcu ile yapmagi denedim olmuyormus.
@@ -57,7 +62,7 @@ public class GameManager : MonoBehaviour
         totalScoreText.text = "Score: " + score; // so the text that we got from inspector we initialize it with the score value. so it's just text
         totalDistanceText.text = "Distance: " + distance.ToString("F1") + " m";
 
-        PlayerMovement.Instance.Die();
+        Player.Instance.Die();
         Time.timeScale = 0f;
     }
 }
