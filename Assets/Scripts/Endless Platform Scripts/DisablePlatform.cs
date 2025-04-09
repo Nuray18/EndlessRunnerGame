@@ -19,6 +19,7 @@ public class DisablePlatform : MonoBehaviour
         {
             Debug.Log("Platform disabled and returned to pool: " + gameObject.name);
             ObjectPooler.Instance.ReturnToPool(gameObject); // Kuyruğa geri gönder
+            //obj.name = "PooledPlatform";
         }
     }
 }

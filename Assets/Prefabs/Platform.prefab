@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1384059185514435576}
   - component: {fileID: 2166337260213699349}
   - component: {fileID: 1218121372520810648}
-  - component: {fileID: 3127024707421102517}
   - component: {fileID: 8613383597648748977}
+  - component: {fileID: 2332640877341832965}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Ground
@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 2456437761404845946}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 37.29}
-  m_LocalScale: {x: 9, y: 1, z: 50}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -42,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2456437761404845946}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1218121372520810648
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -85,7 +85,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3127024707421102517
+--- !u!114 &8613383597648748977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2456437761404845946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19d1935a0c59abf42b86dae0b07be004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableDistance: 30
+--- !u!65 &2332640877341832965
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,18 +117,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8613383597648748977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2456437761404845946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19d1935a0c59abf42b86dae0b07be004, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  disableDistance: 30
