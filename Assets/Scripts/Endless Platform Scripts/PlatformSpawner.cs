@@ -2,14 +2,19 @@
 
 public class PlatformSpawner : MonoBehaviour
 {
+    // script
     public ObjectPooler objectPooler;
+
     public int initialPlatformCount = 10;
     public float platformLength;
 
+    // pattern for center platform
     public GameObject[] obstaclePatterns;
     public GameObject[] collectablePatterns;
 
     private float spawnZ = 0f;
+    private float spawnX = 0f;
+
     private Transform playerTransform;
 
     void Start()
@@ -39,6 +44,7 @@ public class PlatformSpawner : MonoBehaviour
         if (Player.Instance == null)
             return;
 
+        // player'e gore platform spawn et
         if (playerTransform.position.z + (platformLength * 5) > spawnZ)
         {
             SpawnPlatform();
@@ -58,7 +64,16 @@ public class PlatformSpawner : MonoBehaviour
             }
         }
 
-        platform.transform.position = new Vector3(0, 0, spawnZ);
+        if(platform.name.Contains("RightPlatform"))
+        {
+            spawnX = 54.5f;
+        }
+        else if(platform.name.Contains("LeftPlatform"))
+        {
+            spawnX = -54.5f;
+        }
+
+        platform.transform.position = new Vector3(spawnX, 0, spawnZ);
         platform.transform.rotation = Quaternion.identity;
         platform.SetActive(true);
 

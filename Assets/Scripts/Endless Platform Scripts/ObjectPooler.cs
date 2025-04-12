@@ -5,7 +5,11 @@ public class ObjectPooler : MonoBehaviour
 {
     public static ObjectPooler Instance; // Singleton
 
-    public GameObject platformPrefab;
+    private int platformIndex = 0;
+    private int obstacleIndex = 0;
+    private int collectableIndex = 0;
+
+    public GameObject[] platformPrefabs;
     public GameObject[] obstaclePrefabs;
     public GameObject[] collectablePrefabs;
     public int poolSize = 10;
@@ -13,6 +17,7 @@ public class ObjectPooler : MonoBehaviour
     private Queue<GameObject> pool;
     private Dictionary<GameObject, Queue<GameObject>> obstaclePools;
     private Dictionary<GameObject, Queue<GameObject>> collectablePools;
+    private Dictionary<GameObject, Queue<GameObject>> platformPools;
 
     void Awake()
     {
@@ -24,13 +29,18 @@ public class ObjectPooler : MonoBehaviour
         pool = new Queue<GameObject>();
         obstaclePools = new Dictionary<GameObject, Queue<GameObject>>();
         collectablePools = new Dictionary<GameObject, Queue<GameObject>>();
+        platformPools = new Dictionary<GameObject, Queue<GameObject>>();
 
-        // Platform prefab'larını havuza ekliyoruz
-        for (int i = 0; i < poolSize; i++)
+        foreach (var prefab in platformPrefabs)
         {
-            GameObject obj = Instantiate(platformPrefab);
-            obj.SetActive(false);  // Başta pasif yapıyoruz
-            pool.Enqueue(obj);     // Kuyruğa ekliyoruz
+            Queue<GameObject> queue = new Queue<GameObject>();
+            for (int i = 0; i < poolSize; i++)
+            {
+                GameObject obj = Instantiate(prefab);
+                obj.SetActive(false);
+                queue.Enqueue(obj);
+            }
+            platformPools[prefab] = queue;
         }
 
         // Obstacle havuzlarını hazırla
@@ -68,17 +78,21 @@ public class ObjectPooler : MonoBehaviour
             return null;  // Pool boş olduğu için null döndürüyoruz
         }
 
-        // Eğer havuzda nesne varsa, sıradakini al
-        if (pool.Count > 0)
-        { 
-            GameObject obj = pool.Dequeue(); // Kuyruktan al
+        if (platformPrefabs.Length == 0)
+            return null;
+
+        GameObject selectedPrefab = platformPrefabs[platformIndex];
+        platformIndex = (platformIndex + 1) % platformPrefabs.Length;
+
+        if (platformPools.ContainsKey(selectedPrefab) && platformPools[selectedPrefab].Count > 0)
+        {
+            GameObject obj = platformPools[selectedPrefab].Dequeue();
             obj.SetActive(true);
             return obj;
         }
 
-        // Eğer havuz boşsa, opsiyonel olarak yeni oluştur
-        return Instantiate(platformPrefab);
-
+        // Eğer havuz boşsa yeni oluşturmak opsiyonel:
+        return Instantiate(selectedPrefab);
     }
 
     public GameObject GetPooledObstacle(GameObject prefab)
@@ -122,6 +136,17 @@ public class ObjectPooler : MonoBehaviour
     public void ReturnToPool(GameObject obj)
     {
         obj.SetActive(false);
+
+        foreach (var kvp in platformPools)
+        {
+            // Prefab'larla eşleşen objeyi doğru havuza geri gönder
+            if (obj.name.Contains(kvp.Key.name))
+            {
+                platformPools[kvp.Key].Enqueue(obj);
+                return;
+            }
+        }
+
         pool.Enqueue(obj); // Tekrar kuyruğa ekle
     }
 
