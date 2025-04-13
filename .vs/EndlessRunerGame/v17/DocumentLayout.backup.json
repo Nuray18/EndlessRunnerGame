@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\azcom\\EndlessRunerGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\SkyShader Scripts\\SkyDomeFollower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\SkyShader Scripts\\SkyDomeFollower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|C:\\Users\\azcom\\EndlessRunerGame\\assets\\scripts\\gameui scripts\\coin scripts\\collectibles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameui scripts\\coin scripts\\collectibles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|C:\\Users\\azcom\\EndlessRunerGame\\assets\\shaders\\nightskywithstars.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|solutionrelative:assets\\shaders\\nightskywithstars.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|c:\\users\\azcom\\endlessrunergame\\assets\\scripts\\endless platform scripts\\platformspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\endless platform scripts\\platformspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|C:\\Users\\azcom\\EndlessRunerGame\\assets\\scripts\\endless platform scripts\\objectpooler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\endless platform scripts\\objectpooler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|C:\\Users\\azcom\\EndlessRunerGame\\assets\\scripts\\endless platform scripts\\platformspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\endless platform scripts\\platformspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|C:\\Users\\azcom\\EndlessRunerGame\\assets\\shaders\\twistingroadurp.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|solutionrelative:assets\\shaders\\twistingroadurp.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|C:\\Users\\azcom\\EndlessRunerGame\\assets\\scripts\\endless platform scripts\\disableplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\endless platform scripts\\disableplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|C:\\Users\\azcom\\EndlessRunerGame\\assets\\scripts\\gameui scripts\\instructions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameui scripts\\instructions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|C:\\Users\\azcom\\EndlessRunerGame\\assets\\scripts\\gameui scripts\\coin scripts\\collectibles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameui scripts\\coin scripts\\collectibles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|C:\\Users\\azcom\\EndlessRunerGame\\assets\\scripts\\gameui scripts\\mainmenubuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|C:\\Users\\azcom\\EndlessRunerGame\\assets\\scripts\\gameui scripts\\gamebuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameui scripts\\gamebuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|C:\\Users\\azcom\\EndlessRunerGame\\assets\\scripts\\endless platform scripts\\disableplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\endless platform scripts\\disableplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|C:\\Users\\azcom\\EndlessRunerGame\\assets\\scripts\\player scripts\\distancetracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,42 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SkyDomeFollower.cs",
-              "DocumentMoniker": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\SkyShader Scripts\\SkyDomeFollower.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SkyShader Scripts\\SkyDomeFollower.cs",
-              "ToolTip": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\SkyShader Scripts\\SkyDomeFollower.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SkyShader Scripts\\SkyDomeFollower.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T09:18:50.086Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NightSkyWithStars.shader",
-              "DocumentMoniker": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Shaders\\NightSkyWithStars.shader",
-              "RelativeDocumentMoniker": "Assets\\Shaders\\NightSkyWithStars.shader",
-              "ToolTip": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Shaders\\NightSkyWithStars.shader",
-              "RelativeToolTip": "Assets\\Shaders\\NightSkyWithStars.shader",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2025-04-12T08:39:45.504Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TwistingRoadURP.shader",
-              "DocumentMoniker": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Shaders\\TwistingRoadURP.shader",
-              "RelativeDocumentMoniker": "Assets\\Shaders\\TwistingRoadURP.shader",
-              "ToolTip": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Shaders\\TwistingRoadURP.shader",
-              "RelativeToolTip": "Assets\\Shaders\\TwistingRoadURP.shader",
-              "ViewState": "AgIAACMAAAAAAAAAAAAmwEMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2025-04-12T07:51:45.779Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Instructions.cs",
               "DocumentMoniker": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\GameUI Scripts\\Instructions.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameUI Scripts\\Instructions.cs",
@@ -137,31 +90,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ObjectPooler.cs",
               "DocumentMoniker": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\Endless Platform Scripts\\ObjectPooler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Endless Platform Scripts\\ObjectPooler.cs",
               "ToolTip": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\Endless Platform Scripts\\ObjectPooler.cs",
               "RelativeToolTip": "Assets\\Scripts\\Endless Platform Scripts\\ObjectPooler.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAkwH4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T07:09:09.248Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "PlatformSpawner.cs",
               "DocumentMoniker": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\Endless Platform Scripts\\PlatformSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Endless Platform Scripts\\PlatformSpawner.cs",
               "ToolTip": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\Endless Platform Scripts\\PlatformSpawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\Endless Platform Scripts\\PlatformSpawner.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAwwE0AAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:39:20.646Z"
+              "WhenOpened": "2025-04-08T15:39:20.646Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "DisablePlatform.cs",
               "DocumentMoniker": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\Endless Platform Scripts\\DisablePlatform.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Endless Platform Scripts\\DisablePlatform.cs",
@@ -173,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Collectibles.cs",
               "DocumentMoniker": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\GameUI Scripts\\Coin Scripts\\Collectibles.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameUI Scripts\\Coin Scripts\\Collectibles.cs",
@@ -185,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "Obstracles.cs",
               "DocumentMoniker": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\Obstracle\\Obstracles.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstracle\\Obstracles.cs",
@@ -197,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 13,
               "Title": "ScoreDisplay.cs",
               "DocumentMoniker": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\GameUI Scripts\\ScoreDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameUI Scripts\\ScoreDisplay.cs",
@@ -209,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 12,
               "Title": "ScoreManager.cs",
               "DocumentMoniker": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\GameManager Scripts\\ScoreManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager Scripts\\ScoreManager.cs",
@@ -221,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 11,
               "Title": "DistanceDisplay.cs",
               "DocumentMoniker": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\GameUI Scripts\\DistanceDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameUI Scripts\\DistanceDisplay.cs",
@@ -233,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 10,
               "Title": "DistanceTracker.cs",
               "DocumentMoniker": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\Player Scripts\\DistanceTracker.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player Scripts\\DistanceTracker.cs",
@@ -245,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\GameManager Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager Scripts\\GameManager.cs",
@@ -257,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "GameButtons.cs",
               "DocumentMoniker": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\GameUI Scripts\\GameButtons.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameUI Scripts\\GameButtons.cs",
@@ -269,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "MainMenuButtons.cs",
               "DocumentMoniker": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\GameUI Scripts\\MainMenuButtons.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameUI Scripts\\MainMenuButtons.cs",
@@ -281,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\Player Scripts\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player Scripts\\Player.cs",
