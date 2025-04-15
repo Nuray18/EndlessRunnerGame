@@ -15,6 +15,9 @@ public class PlatformSpawner : MonoBehaviour
     private float spawnZ = 0f;
     private float spawnX = 0f;
 
+    
+    private float sideXPosition = 104.5f; // this is for the left and the right platform X positions
+
     private Transform playerTransform;
 
     void Start()
@@ -26,16 +29,14 @@ public class PlatformSpawner : MonoBehaviour
 
         if (obstaclePatterns.Length > 0)
         {
-            // Platform uzunluğunu prefab scale’ine göre ayarla (varsayılan Unity plane = 10 birim)
             platformLength = objectPooler.GetPooledObject().transform.localScale.z * 10f;
         }
-
 
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
 
         for (int i = 0; i < initialPlatformCount; i++)
         {
-            SpawnPlatform();
+            SpawnAllPlatforms();
         }
     }
 
@@ -47,33 +48,51 @@ public class PlatformSpawner : MonoBehaviour
         // player'e gore platform spawn et
         if (playerTransform.position.z + (platformLength * 5) > spawnZ)
         {
-            SpawnPlatform();
+            SpawnAllPlatforms();
         }
     }
 
-    void SpawnPlatform()
+    void SpawnAllPlatforms()
     {
-        GameObject platform = objectPooler.GetPooledObject();
+        float currentZ = spawnZ;
+
+        SpawnPlatform(currentZ);
+        SpawnLeftPlatform(currentZ);
+        SpawnRightPlatform(currentZ);
+
+        spawnZ += platformLength;
+    }
+
+    void SpawnPlatform(float z)
+    {
+        GameObject platform = objectPooler.GetPooledObject(); // object poolere verdigimiz platformlari aliyoruz
         if (platform == null) return;
+
+        var disable = platform.GetComponent<DisablePlatform>(); // platform dan DisablePlatform scriptini aliyoruz gameObjectin ustunde aldigimiz icin problem yok. Arama yapmiyoruz.
+        if (disable != null)
+            disable.platformType = DisablePlatform.PlatformType.Center;
 
         foreach (Transform child in platform.transform)
         {
-            if (child.name == "ObstacleContainer" || child.name == "CollectableContainer")
+            if (child.name == "ObstacleContainer")
             {
+                foreach (Transform obj in child)
+                {
+                    objectPooler.ReturnObstacle(obj.gameObject, obj.gameObject); // prefab referansı objenin kendisi
+                }
+                Destroy(child.gameObject);
+            }
+            else if (child.name == "CollectableContainer")
+            {
+                foreach (Transform obj in child)
+                {
+                    objectPooler.ReturnCollectable(obj.gameObject, obj.gameObject); // prefab referansı objenin kendisi
+                }
                 Destroy(child.gameObject);
             }
         }
 
-        if(platform.name.Contains("RightPlatform"))
-        {
-            spawnX = 54.5f;
-        }
-        else if(platform.name.Contains("LeftPlatform"))
-        {
-            spawnX = -54.5f;
-        }
-
-        platform.transform.position = new Vector3(spawnX, 0, spawnZ);
+        platform.transform.position = new Vector3(spawnX, 0, z);
         platform.transform.rotation = Quaternion.identity;
         platform.SetActive(true);
 
@@ -108,8 +127,38 @@ public class PlatformSpawner : MonoBehaviour
             pattern.transform.localPosition = Vector3.zero;
             pattern.SetActive(true);
         }
-
-        spawnZ += platformLength;
     }
+
+
+    void SpawnLeftPlatform(float z)
+    {
+        GameObject platform = objectPooler.GetPooledLeftObject();
+        if (platform == null) return;
+
+        var disable = platform.GetComponent<DisablePlatform>();
+        if (disable != null)
+            disable.platformType = DisablePlatform.PlatformType.Left;
+
+        platform.transform.position = new Vector3(spawnX - sideXPosition, 0, z); // sola kaydır
+        platform.transform.rotation = Quaternion.identity;
+        platform.SetActive(true);
+    }
+
+    // positive
+    void SpawnRightPlatform(float z)
+    {
+        GameObject platform = objectPooler.GetPooledRightObject();
+        if (platform == null) return;
+
+        var disable = platform.GetComponent<DisablePlatform>();
+        if (disable != null)
+            disable.platformType = DisablePlatform.PlatformType.Right;
+
+        platform.transform.position = new Vector3(spawnX + sideXPosition, 0, z); // sağa kaydır
+        platform.transform.rotation = Quaternion.identity;
+        platform.SetActive(true);
+
+    }
+
 
 }
