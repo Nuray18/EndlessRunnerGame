@@ -2,23 +2,28 @@
 
 public class PlatformSpawner : MonoBehaviour
 {
+    private Transform playerTransform;
     // script
     public ObjectPooler objectPooler;
-
-    public int initialPlatformCount = 10;
-    public float platformLength;
 
     // pattern for center platform
     public GameObject[] obstaclePatterns;
     public GameObject[] collectablePatterns;
 
-    private float spawnZ = 0f;
-    private float spawnX = 0f;
+    public int initialPlatformCount = 10;
 
+    // Z axis
+    private float spawnZCenter = 0.0f;
+    private float spawnZLeft = 0.0f;
+    private float spawnZRight = 0.0f;
+
+    public float centerPlatformLength = 50f;
+    public float sidePlatformLength = 50f;
     
+    private float spawnX = 0f;
     private float sideXPosition = 104.5f; // this is for the left and the right platform X positions
 
-    private Transform playerTransform;
+
 
     void Start()
     {
@@ -29,14 +34,21 @@ public class PlatformSpawner : MonoBehaviour
 
         if (obstaclePatterns.Length > 0)
         {
-            platformLength = objectPooler.GetPooledObject().transform.localScale.z * 10f;
+            centerPlatformLength = objectPooler.GetPooledObject().transform.localScale.z * 10f;
         }
 
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
 
         for (int i = 0; i < initialPlatformCount; i++)
         {
-            SpawnAllPlatforms();
+            SpawnPlatform(spawnZCenter);
+            spawnZCenter += centerPlatformLength;
+
+            SpawnLeftPlatform(spawnZLeft);
+            spawnZLeft += sidePlatformLength;
+
+            SpawnRightPlatform(spawnZRight);
+            spawnZRight += sidePlatformLength;
         }
     }
 
@@ -45,22 +57,24 @@ public class PlatformSpawner : MonoBehaviour
         if (Player.Instance == null)
             return;
 
-        // player'e gore platform spawn et
-        if (playerTransform.position.z + (platformLength * 5) > spawnZ)
+        if (playerTransform.position.z + (centerPlatformLength * 5) > spawnZCenter)
         {
-            SpawnAllPlatforms();
+            SpawnPlatform(spawnZCenter);
+            spawnZCenter += centerPlatformLength;
         }
-    }
 
-    void SpawnAllPlatforms()
-    {
-        float currentZ = spawnZ;
+        if (playerTransform.position.z + (sidePlatformLength * 5) > spawnZLeft)
+        {
+            SpawnLeftPlatform(spawnZLeft);
+            spawnZLeft += sidePlatformLength;
+        }
 
-        SpawnPlatform(currentZ);
-        SpawnLeftPlatform(currentZ);
-        SpawnRightPlatform(currentZ);
+        if (playerTransform.position.z + (sidePlatformLength * 5) > spawnZRight)
+        {
+            SpawnRightPlatform(spawnZRight);
+            spawnZRight += sidePlatformLength;
+        }
 
-        spawnZ += platformLength;
     }
 
     void SpawnPlatform(float z)

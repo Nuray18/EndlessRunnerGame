@@ -1126,6 +1126,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1218121372520810648, guid: be987ef5ecb34994f9d61b812ff6a401, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7151dde735fc35440b928a0dc7bb69de, type: 2}
     - target: {fileID: 1384059185514435576, guid: be987ef5ecb34994f9d61b812ff6a401, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1617,6 +1621,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2919107018637427871, guid: 5f96b39372fd8094695f74368ffa79e6, type: 3}
+      propertyPath: disableDistance
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4706795923597073922, guid: 5f96b39372fd8094695f74368ffa79e6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 104.5
@@ -1627,7 +1635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4706795923597073922, guid: 5f96b39372fd8094695f74368ffa79e6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4706795923597073922, guid: 5f96b39372fd8094695f74368ffa79e6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2380,7 +2388,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPooler: {fileID: 2121806436}
-  initialPlatformCount: 10
   obstaclePatterns:
   - {fileID: 4847873461613246291, guid: 59de69d12d0ee6d4bbe00beaf4acd551, type: 3}
   - {fileID: 2233100844358243858, guid: d5f902117e09a4a46af942f0589d0aaa, type: 3}
@@ -2389,6 +2396,9 @@ MonoBehaviour:
   - {fileID: 9068272166966234111, guid: 1f1c19acb75b8d349af529ff3e84e17d, type: 3}
   - {fileID: 6718009719568482918, guid: 17d7f3d5779ce304ca4a78440e7f8246, type: 3}
   - {fileID: 3318504068275756112, guid: 89019beca651f3d45bbfce31fd8bfceb, type: 3}
+  initialPlatformCount: 10
+  centerPlatformLength: 10
+  sidePlatformLength: 100
 --- !u!1 &1828889598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2896,7 +2906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6496157826638833844, guid: a375a814f3dc19e4a8cc11da0395149f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6496157826638833844, guid: a375a814f3dc19e4a8cc11da0395149f, type: 3}
       propertyPath: m_LocalRotation.w

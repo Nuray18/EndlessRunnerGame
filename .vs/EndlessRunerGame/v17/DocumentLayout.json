@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\azcom\\EndlessRunerGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|C:\\Users\\azcom\\EndlessRunerGame\\assets\\scripts\\endless platform scripts\\platformspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|c:\\users\\azcom\\endlessrunergame\\assets\\scripts\\endless platform scripts\\platformspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\endless platform scripts\\platformspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameui scripts\\distancedisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|c:\\users\\azcom\\endlessrunergame\\assets\\scripts\\player scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|C:\\Users\\azcom\\EndlessRunerGame\\assets\\scripts\\player scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{132E2E64-3705-41B2-92F4-A0CA6A6CBDBE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -98,8 +98,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Endless Platform Scripts\\ObjectPooler.cs",
               "ViewState": "AgIAAIsAAAAAAAAAAAAQwMoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T07:09:09.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T07:09:09.248Z"
             },
             {
               "$type": "Document",
@@ -109,7 +108,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Endless Platform Scripts\\PlatformSpawner.cs",
               "ToolTip": "C:\\Users\\azcom\\EndlessRunerGame\\Assets\\Scripts\\Endless Platform Scripts\\PlatformSpawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\Endless Platform Scripts\\PlatformSpawner.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAgwJEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T15:39:20.646Z",
               "EditorCaption": ""
@@ -124,8 +123,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Endless Platform Scripts\\DisablePlatform.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAYwC0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:31:47.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T15:31:47.367Z"
             },
             {
               "$type": "Document",
@@ -185,8 +183,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameUI Scripts\\DistanceDisplay.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T12:17:11.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T12:17:11.411Z"
             },
             {
               "$type": "Document",
@@ -246,8 +243,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Player Scripts\\Player.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T04:32:55.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T04:32:55.368Z"
             }
           ]
         }

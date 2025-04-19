@@ -119,5 +119,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19d1935a0c59abf42b86dae0b07be004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disableDistance: 10
+  disableDistance: 60
   platformType: 2
